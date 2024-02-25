@@ -1,21 +1,24 @@
-public class p7 {
-    private double height;
-    private double width;
+class p7 {
+    double height;
+    double width;
 
-    public p7(double height, double width) {
-        this.height = height;
-        this.width = width;
+    public p7(double h, double w) {
+        height = h;
+        width = w;
     }
 
     public double calculateArea() {
         return height * width;
     }
 
-    public static void main(String[] args) {
-        p7 myRectangle = new p7(5.0, 10.0);
+    public double calculatePerimeter() {
+        return 2 * (height + width);
+    }
 
-        System.out.println("Height of the rectangle: " + myRectangle.height);
-        System.out.println("Width of the rectangle: " + myRectangle.width);
-        System.out.println("Area of the rectangle: " + myRectangle.calculateArea());
+    public static void main(String[] args) {
+        p7 rect = new p7(5, 10);
+
+        System.out.println("Rectangle Area: " + rect.calculateArea());
+        System.out.println("Rectangle Perimeter: " + rect.calculatePerimeter());
     }
 }
