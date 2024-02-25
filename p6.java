@@ -18,7 +18,7 @@ public class p6 {
     public static void main(String[] args) {
         p6 student1 = new p6(12, "jethalal");
         p6 student2 = new p6(35, "Bhide");
-        p6 student3 = new p6(97, "Dr. Hathi");
+        p6 student3 = new p6(97, "Hathi");
 
         System.out.println("Student 1 Name: " + student1.getName());
         System.out.println("Student 2 Name: " + student2.getName());
