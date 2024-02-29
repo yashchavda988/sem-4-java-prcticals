@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
 class Shape {
+    float pi = 3.14f;
     public float area(float radius) {
-        return (float) (Math.PI * radius * radius);
+        return (float) (pi * radius * radius);
     }
 
     public float area(float length, float width) {
